@@ -24,5 +24,5 @@ export const setBackground = ({
 color = "rgba(0,0,0,0)"
 } = {}) => {
     return `background:linear-gradient(${color}, ${color}),
-url(${img}}) no-repeat fixed center/cover`;
+url(${img}) no-repeat fixed center/cover`;
 };
