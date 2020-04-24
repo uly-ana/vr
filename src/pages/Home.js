@@ -6,7 +6,7 @@ import Header from '../components/home/Header'
         <>
         <Header />
         </>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;
