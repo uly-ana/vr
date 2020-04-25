@@ -2,7 +2,7 @@ import {createGlobalStyle} from 'styled-components'
 import {setColor, setFont} from '../../styles'
 
 const Globals = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400&family=Special+Elite&display=swap');
 
 
 * {

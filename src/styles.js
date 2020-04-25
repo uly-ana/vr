@@ -3,12 +3,12 @@ export const setColor = {
     primaryColor: "#03DDDC",
     mainWhite: "fff",
     mainBlack: "#222",
-    mainGrey: "#ececec"
+    mainBlue: "#037A90"
 }
 
 export const setFont = {
-    main: "font-family: 'Special Elite', cursive",
-    second: "font - family: 'Changa', sans- serif"
+    // main: "font-family: 'Special Elite', cursive;",
+    // second: "font - family: 'Changa', sans- serif;"
 };
 
 export const setFlex = ({x="center",y="center"}={}) => {
