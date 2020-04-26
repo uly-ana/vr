@@ -8,7 +8,6 @@ background: transparent;
 border-color: ${setColor.mainBlue};
 text-transform: capitalize;
 padding: ${setRem(15)};
-margin-top: ${setRem(30)};
 font-size: ${setRem(16)};
 ${setLetterSpacing(2)};
 border-radius: ${setRem(3)};
@@ -17,5 +16,12 @@ box-shadow: 0 0 40px 40px transparent inset, 0 0 0 0 transparent;
   ${setTransition};
 &:hover{
 box-shadow: 0 0 10px 0 ${setColor.mainBlue} inset, 0 0 10px 4px ${setColor.mainBlue};
-}
+};
+
+${props => 
+`margin: ${props.t || 0} ${props.r || 0} ${props.b || 0} ${props.l ||0}`
+};
+/* ${props =>
+    `padding: ${props.top || 0} ${props.right || 0} ${props.bottom || 0} ${props.lelf || 0}`
+}; */
 `

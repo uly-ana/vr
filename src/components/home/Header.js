@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <Hero img={homeImg}>
             <Banner greeting="Welcome to " title="VR Club" text="some more info about this club">
-                <PrimaryBtn>
+                <PrimaryBtn t="2.5rem">
                     View Details
                 </PrimaryBtn>
             </Banner>
