@@ -8,8 +8,8 @@ export const setColor = {
 }
 
 export const setFont = {
-    // main: "font-family: 'Special Elite', cursive;",
-    // second: "font - family: 'Changa', sans- serif;"
+    main: "font-family: 'Special Elite', cursive",
+    second: "font - family: 'Changa', sans- serif"
 };
 
 export const setFlex = ({x="center",y="center"}={}) => {
@@ -59,4 +59,10 @@ export const media = Object.keys(sizes).reduce((acc, label) =>{
     }
     `
     return acc
-}, {})
+}, {});
+
+export const setTransition = ({ property = "all", time ="1s", timing="ease-in-out"}={})=> {
+return `
+transition: ${property} ${time} ${timing}
+`
+};
