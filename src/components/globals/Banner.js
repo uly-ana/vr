@@ -17,6 +17,44 @@ const Banner = ({className, title, text, children, greeting}) => {
         </div>
     );
 };
+
+const fadeInLeft = (start, middle, end) => {
+    const animation = keyframes`
+0% {
+    opacity: 0;
+    transform: translateX(${start})
+}
+50%{
+   opacity: 0;
+   transform: translateX(${middle}) 
+}
+100%{
+    opacity: 1;
+    transform: translateX(${end})
+}
+`
+return css`animation:${animation} 2.5s ease-in-out`;
+};
+
+const fadeInDown = (start, middle, end) => {
+    const animation = keyframes`
+0% {
+    opacity: 0;
+    transform: translateY(${start})
+}
+50%{
+   opacity: 0;
+   transform: translateY(${middle}) 
+}
+100%{
+    opacity: 1;
+    transform: translateY(${end})
+}
+`
+    return css`animation:${animation} 3.5s ease-in-out`;
+};
+
+
 const BannerWrapper = styled(Banner)`
 /* background: rgba(0,0,0, 0.7); */
 text-align: center;
@@ -48,11 +86,11 @@ ${media.tablet`
     }`}
 
 h1{
-    /* animation */
+  ${fadeInLeft('100%', '-25%', '0%')};
 }
 
 .info{
-    /* animation */
+   ${fadeInDown('-100%', '100%', '0%')}; 
 }
 `;
 export default BannerWrapper
