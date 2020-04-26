@@ -10,6 +10,8 @@ text-transform: capitalize;
 padding: ${setRem(15)};
 font-size: ${setRem(16)};
 ${setLetterSpacing(2)};
+cursor: pointer;
+text-decoration: none;
 border-radius: ${setRem(3)};
 box-shadow: 0 0 40px 40px transparent inset, 0 0 0 0 transparent;
   -webkit-transition: ${setTransition};
@@ -21,6 +23,7 @@ box-shadow: 0 0 10px 0 ${setColor.mainBlue} inset, 0 0 10px 4px ${setColor.mainB
 ${props => 
 `margin: ${props.t || 0} ${props.r || 0} ${props.b || 0} ${props.l ||0}`
 };
+
 /* ${props =>
     `padding: ${props.top || 0} ${props.right || 0} ${props.bottom || 0} ${props.lelf || 0}`
 }; */

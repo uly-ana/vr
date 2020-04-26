@@ -5,16 +5,13 @@ import {setColor, setFont, setRem, setLetterSpacing, setBorder, media} from '../
 
 const Banner = ({className, title, text, children, greeting}) => {
     return (
-        <div className={className}>
-            <h1>{greeting}<span>{title}</span>{" "}
-            </h1>
+    <div className={className}>
+        <h1>{greeting}<span></span>{title}{" "}
+        </h1>
     <div className="info">
     <p>{text}</p>
-    {children}
-    </div>
-   
-
-        </div>
+    {children}</div>
+   </div>
     );
 };
 
@@ -55,24 +52,19 @@ const fadeInDown = (start, middle, end) => {
 };
 
 
+
 const BannerWrapper = styled(Banner)`
-/* background: rgba(0,0,0, 0.7); */
 text-align: center;
 padding: ${setRem(35)} ${setRem(20)};
-letter-spacing: ${setLetterSpacing(9)};
+${setLetterSpacing(1)};
 font-family: ${setFont.main};
 color: ${setColor.mainBlue};
 ${setBorder};
-
-
 h1{
-    /* text-transform: capitalize; */
     font-size: ${setRem(38)};
     color: ${setColor.primaryColor};
+    letter-spacing: ${setLetterSpacing(2)};
     font-family: ${setFont.second};
-    span {
-        color: ${setColor.mainWhite}
-    }
 }
 p {
     width: 85%;
@@ -80,12 +72,18 @@ p {
 }
 ${media.tablet`
     width: 70vw;
-    ${setBorder};
     ${setColor.primaryColor};
-
+    ${setBorder};
     p{
         width: 75%;
-    }`}
+    }`};
+
+${media.phone`
+    width: 70vw;
+    ${setColor.primaryColor};
+    ${setBorder};
+
+    `};
 
 h1{
   ${fadeInLeft('100%', '-25%', '0%')};
@@ -93,6 +91,12 @@ h1{
 
 .info{
    ${fadeInDown('-100%', '100%', '0%')}; 
+   ${setFont.main};
+   font-size:${setRem(18)};
+}
+
+.buttonPrm{
+   ${fadeInDown('-100%', '50%', '0%')}; 
 }
 `;
 export default BannerWrapper

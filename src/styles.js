@@ -2,14 +2,14 @@ import {css} from 'styled-components'
 
 export const setColor = {
     primaryColor: "#03DDDC",
-    mainWhite: "fff",
-    mainBlack: "#222",
+    mainWhite: "#fff",
+    mainBlack: "#000",
     mainBlue: "#037A90"
 }
 
 export const setFont = {
-    main: "font-family: 'Special Elite', cursive",
-    second: "font - family: 'Changa', sans- serif"
+    main: "font-family: 'Share Tech Mono', monospace",
+    second: "font-family: 'Titillium Web', sans-serif"
 };
 
 export const setFlex = ({x="center",y="center"}={}) => {
@@ -38,10 +38,10 @@ export const setLetterSpacing = (number = 2) => {
     return `letter-spacing:${number}px`
 };
 
-export const setBorder = ({width="2px", style="solid", color="red"} = {}) => {
+export const setBorder = ({ width = "2px", style = "solid", color ="red"} = {}) => {
     return `
     border-top: ${width} ${style} ${setColor.mainBlue};
-    border-right: ${width} ${style} ${setColor.mainBlue}
+    border-right: ${width} ${style} ${setColor.mainBlue};
     `
 };
 
@@ -49,7 +49,7 @@ const sizes = {
     large: 1200,
     desktop: 992,
     tablet: 768,
-    phone: 576,
+    phone: 375,
 }
 
 export const media = Object.keys(sizes).reduce((acc, label) =>{

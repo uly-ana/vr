@@ -6,12 +6,15 @@ import {PrimaryBtn} from '../globals/Buttons'
 const Header = () => {
     return (
         <Hero img={homeImg}>
-            <Banner greeting="Welcome to " title="VR Club" text="some more info about this club">
-                <PrimaryBtn t="2.5rem">
+            <Banner 
+                greeting="Welcome to " title="VR Club" text="A new type of entertainment for you, your friends, loved ones and relatives.">
+                <PrimaryBtn className="buttonPrm" t="2.5rem">
                     View Details
                 </PrimaryBtn>
-            </Banner>
-            
+                {/* <PrimaryBtn t="2.5rem" as="a" href="https://www.pravda.com.ua/">
+                    Pravda
+                </PrimaryBtn> */}
+            </Banner>  
         </Hero>
     );
 };

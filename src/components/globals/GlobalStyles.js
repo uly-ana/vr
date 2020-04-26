@@ -2,7 +2,7 @@ import {createGlobalStyle} from 'styled-components'
 import {setColor, setFont} from '../../styles'
 
 const Globals = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Titillium+Web:wght@200&display=swap');
 
 
 * {
@@ -14,7 +14,8 @@ const Globals = createGlobalStyle`
 body {
     font-size: 100;
     color: ${setColor.primaryColor};
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background: ${setColor.mainBlack};
+    /* background-image: linear-gradient(to bottom right, #434343 0%, black 100%); */
     ${setFont.second};
 }
 
@@ -52,7 +53,6 @@ p{
     line-height: 1.5;
     margin: 0 0 1.5 0;
 }
-
 
 `
 export default Globals
