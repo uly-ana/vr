@@ -64,10 +64,12 @@ font-family: ${setFont.main};
 color: ${setColor.mainBlue};
 ${setBorder};
 
+
 h1{
     /* text-transform: capitalize; */
     font-size: ${setRem(38)};
     color: ${setColor.primaryColor};
+    font-family: ${setFont.second};
     span {
         color: ${setColor.mainWhite}
     }
