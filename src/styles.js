@@ -40,9 +40,15 @@ export const setLetterSpacing = (number = 2) => {
 
 export const setBorder = ({ width = "2px", style = "solid", color ="red"} = {}) => {
     return `
-    border-top: ${width} ${style} ${setColor.mainBlue};
-    border-right: ${width} ${style} ${setColor.mainBlue};
+    border: ${width} ${style} ${setColor.mainBlue};
     `
+};
+
+export const setShadow = {
+    buttonShd: "0 0 10px 0 #037A90 inset, 0 0 10px 4px #037A90",
+    cardShd: "1px 0px 60px -9px rgba(3, 221, 220, 1)",
+    cardShdDarker: "1px 0px 60px 23px rgba(3, 221, 220, 1)"
+
 };
 
 const sizes = {
