@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { setColor, setRem, setLetterSpacing, setTransition} from '../../styles'
+import { setColor, setRem, setLetterSpacing, setTransition, setShadow} from '../../styles'
 
 export const PrimaryBtn = styled.button`
 display: inline-block;
@@ -17,7 +17,7 @@ box-shadow: 0 0 40px 40px transparent inset, 0 0 0 0 transparent;
   -webkit-transition: ${setTransition};
   ${setTransition};
 &:hover{
-box-shadow: 0 0 10px 0 ${setColor.mainBlue} inset, 0 0 10px 4px ${setColor.mainBlue};
+box-shadow: ${setShadow.buttonShd};
 };
 
 ${props => 

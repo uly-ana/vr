@@ -51,38 +51,41 @@ const fadeInDown = (start, middle, end) => {
     return css`animation:${animation} 3.5s ease-in-out`;
 };
 
-
-
 const BannerWrapper = styled(Banner)`
 text-align: center;
 padding: ${setRem(35)} ${setRem(20)};
 ${setLetterSpacing(1)};
 font-family: ${setFont.main};
 color: ${setColor.mainBlue};
-${setBorder};
+width: 70vw;
+
 h1{
-    font-size: ${setRem(38)};
+    font-size: ${setRem(30)};
     color: ${setColor.primaryColor};
     letter-spacing: ${setLetterSpacing(2)};
     font-family: ${setFont.second};
+    
 }
 p {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
 }
+
 ${media.tablet`
-    width: 70vw;
-    ${setColor.primaryColor};
-    ${setBorder};
-    p{
-        width: 75%;
-    }`};
+    width: 70vw; 
+      
+    p {
+        width: 80%;
+    }
+    `};
 
 ${media.phone`
-    width: 70vw;
+    width: 100%;
     ${setColor.primaryColor};
-    ${setBorder};
-
+   
+  p {
+    width: 100%;
+};
     `};
 
 h1{

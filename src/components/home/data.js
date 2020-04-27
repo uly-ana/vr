@@ -8,23 +8,23 @@ export default [
     img: card1,
     title: "weekdays",
     info:
-      "The price is for 1 person.Session duration 60 minutes.It includes briefing and 50 minutes of playing time. Please arrive no earlier than 5 minutes before the session, and in case of delay, notify the administrator.",
-    price: 125
+      "The price is for 1 person. Session duration 60 minutes. It includes briefing and 50 minutes of playing time.",
+    price: 15
   },
   {
     id: 2,
     img: card2,
     title: "weekends",
     info:
-      "The price is for 1 person.Session duration 60 minutes.It includes briefing and 50 minutes of playing time. Please arrive no earlier than 5 minutes before the session, and in case of delay, notify the administrator.",
-    price: 250
+      "The price is for 1 person. Session duration 60 minutes. It includes briefing and 50 minutes of playing time.",
+    price: 20
   },
   {
     id: 3,
     img: card3,
     title: "gift card",
     info:
-      "VR club gift cards are a great gift for any holiday.The price is for 1 person.Session duration 60 minutes.It includes briefing and 50 minutes of playing time. Please arrive no earlier than 5 minutes before the session, and in case of delay, notify the administrator.",
-    price: 375
+      "VR club gift cards are a great gift for any holiday. The price is for 1 person.Session duration 60 minutes.",
+    price: 25
   }
 ];
