@@ -64,9 +64,13 @@ ${media.desktop `
     width: 100vw;
     max-width: 1170px;
     display: grid;
+    .about-img,
+.about-info {
+    padding: ${setRem(0)};
+};
     grid-template-columns: 1fr 1fr;
     grid-column-gap: ${setRem(20)};
-    .about-img{
+    .about-img, .about-info{
         align-self: center;
     }
 
