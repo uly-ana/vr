@@ -12,17 +12,14 @@ const Globals = createGlobalStyle`
 }
 
 body {
-    font-size: 100;
     color: ${setColor.primaryColor};
     background: ${setColor.mainBlack};
-    /* background-image: linear-gradient(to bottom right, #434343 0%, black 100%); */
     ${setFont.second};
 }
 
 h1{
-    font-size: 3em;
     line-height: 1.2;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.6em;
 }
 
 h2{

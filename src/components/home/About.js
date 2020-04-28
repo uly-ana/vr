@@ -7,40 +7,34 @@ import {PrimaryBtn} from '../globals/Buttons'
 import styled from 'styled-components'
 
 const About = () => {
-    return (
-        <>
-        <Section>
-                <AboutCenter>
-                    <div className="about-img">
-                        <img src={aboutImg} alt="about us"/>
-                    </div>
-                    <div className="about-info">
-                    <Title title="about us"></Title> 
-                        <p>
-                            Absolute freedom.
-The player can easily move around 10 m2. All players movements are tracked and transferred to the virtual world</p>
-                        <p>Online game.
-Play against each other or together against everyone! (from 1 to 4 people at the same time)</p>
-
-                        <p>Closed club. 
-You can enter the club only with a password (you can find it out using our chat bot for Viber and Telegram)</p>
-                        <p>What can I play?</p>
-                        <br></br>
-
+return (
+    <>
+    <Section>
+            <Title title="about us" center></Title> 
+        <AboutCenter>  
+            <div className="about-img">
+                <img src={aboutImg} alt="about us"/>
+            </div>
+            <div className="about-info">
+                    <p>Absolute freedom. The player can easily move around 10 m2. All players movements are tracked and transferred to the virtual world</p>
+                    <p>Online game. Play against each other or together against everyone! (from 1 to 4 people at the same time)</p>
+                    <p>Closed club. You can enter the club only with a password (you can find it out using our chat bot for Viber and Telegram)</p>
+                    <p>What can I play?</p>
                     <PrimaryBtn>See Games</PrimaryBtn>
-
-                    </div>
-                </AboutCenter>
-        
-        </Section> 
-        </>
+                    
+            </div>
+        </AboutCenter>
+    </Section> 
+    </>
     )
 };
 
 const AboutCenter = styled.div`
-.about-img, 
+width: 90vw;
+margin: 0 auto;
+ 
 .about-info {
-    padding: ${setRem(30)};
+    padding: ${setRem(30)} ${setRem(0)};
 }
 .about-img {
     img {
@@ -48,7 +42,7 @@ const AboutCenter = styled.div`
     display: block;
     ${setBorder()};
     opacity: 0.6;
-
+    padding: ${setRem(30)};
     }
 }
 .about-info {
@@ -58,20 +52,18 @@ const AboutCenter = styled.div`
     }
 }
 
-width: 90vw;
-margin: 0 auto;
 
 ${media.large`
-.about-img,
 .about-info {
-    padding: ${setRem(0)};
+    /* padding: ${setRem(30)}; */
 };
     width: 100vw;
     max-width: 1170px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: ${setRem(32)};
-    .about-img, .about-info{
+    .about-img, 
+    .about-info{
         align-self: center;
     }
 

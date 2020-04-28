@@ -11,9 +11,6 @@ const Header = () => {
                 <PrimaryBtn className="buttonPrm" t="2.5rem">
                     View Details
                 </PrimaryBtn>
-                {/* <PrimaryBtn t="2.5rem" as="a" href="https://www.pravda.com.ua/">
-                    Pravda
-                </PrimaryBtn> */}
             </Banner>  
         </Hero>
     );

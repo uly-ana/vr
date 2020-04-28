@@ -5,7 +5,7 @@ export const setColor = {
     mainWhite: "#fff",
     mainBlack: "#000",
     mainBlue: "#037A90"
-}
+};
 
 export const setFont = {
     main: "font-family: 'Share Tech Mono', monospace",
@@ -17,7 +17,7 @@ export const setFlex = ({x="center",y="center"}={}) => {
     display: flex;
     align-items:${y};
     justify-content:${x};
-    `;
+    `
 };
 
 export const setBackground = ({
@@ -25,7 +25,7 @@ export const setBackground = ({
 color = "rgba(0,0,0,0)"
 } = {}) => {
     return `background:linear-gradient(${color}, ${color}),
-url(${img}) no-repeat fixed center/cover`;
+url(${img}) no-repeat fixed center/cover`
 };
 
 export const setRem = (number = 16) => {
@@ -48,7 +48,6 @@ export const setShadow = {
     buttonShd: "0 0 10px 0 #037A90 inset, 0 0 10px 4px #037A90",
     cardShd: "1px 0px 60px -9px rgba(3, 221, 220, 1)",
     cardShdDarker: "1px 0px 60px 23px rgba(3, 221, 220, 1)"
-
 };
 
 const sizes = {
@@ -56,6 +55,7 @@ const sizes = {
     desktop: 992,
     tablet: 768,
     phone: 375,
+    smallPhone: 320
 }
 
 export const media = Object.keys(sizes).reduce((acc, label) =>{

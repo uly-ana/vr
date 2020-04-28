@@ -53,9 +53,9 @@ const fadeInDown = (start, middle, end) => {
 
 const BannerWrapper = styled(Banner)`
 text-align: center;
-padding: ${setRem(35)} ${setRem(20)};
+padding: ${setRem(35)} ${setRem(30)};
 ${setLetterSpacing(1)};
-font-family: ${setFont.main};
+${setFont.main};
 color: ${setColor.mainBlue};
 width: 70vw;
 
@@ -63,30 +63,31 @@ h1{
     font-size: ${setRem(30)};
     color: ${setColor.primaryColor};
     letter-spacing: ${setLetterSpacing(2)};
-    font-family: ${setFont.second};
-    
+    font-family: ${setFont.second};  
 }
+
 p {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
 ${media.tablet`
-    width: 70vw; 
+    width: 100vw; 
       
     p {
-        width: 80%;
+        width: 70%;
     }
-    `};
+`};
 
 ${media.phone`
-    width: 100%;
-    ${setColor.primaryColor};
+    width: 100vw;
+    padding: ${setRem(15)} ${setRem(10)};};
    
   p {
-    width: 100%;
-};
+    width: 90%;
+  }
     `};
+
 
 h1{
   ${fadeInLeft('100%', '-25%', '0%')};

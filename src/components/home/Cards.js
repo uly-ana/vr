@@ -25,10 +25,8 @@ export default class Cards extends Component {
 }
 
 const CardsCenter = styled.div`
-width: 70vw;
+width: 90vw;
 margin: 0 auto;
-
-
 ${media.large`
 width: 100vw;
 max-width: 1170px;

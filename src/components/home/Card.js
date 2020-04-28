@@ -28,10 +28,10 @@ margin: ${setRem(32)} 0;
 .img-container {
     background: ${setColor.mainBlack};
     position: relative;
+    width: 100%;
     
-
     img {
-        width: 70vw;
+        width: 100%;
         display: block;
         ${setTransition};
         opacity: 0.4;
@@ -51,6 +51,7 @@ margin: ${setRem(32)} 0;
         ${setTransition()};
         border: 1px solid ${setColor.primaryColor};
         border-radius: 50px;
+        font-size: ${setRem(10)};
     }
         &:hover .price{
             opacity: 1;
@@ -66,11 +67,13 @@ margin: ${setRem(32)} 0;
         font-size: ${setRem(14)};
     }
 }
+
 box-shadow: ${setShadow.cardShd};
 ${setTransition()};
 &:hover {
   box-shadow: ${setShadow.cardShdDarker};
 }
+
 `;
 
 Card.propTypes = {
