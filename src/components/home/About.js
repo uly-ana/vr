@@ -6,27 +6,37 @@ import {setRem, setBorder, setColor, setLetterSpacing, media} from '../../styles
 import {PrimaryBtn} from '../globals/Buttons'
 import styled from 'styled-components'
 
+
+
 const About = () => {
 return (
-    <>
+  <>
     <Section>
-            <Title title="about us" center></Title> 
-        <AboutCenter>  
-            <div className="about-img">
-                <img src={aboutImg} alt="about us"/>
-            </div>
-            <div className="about-info">
-                    <p>Absolute freedom. The player can easily move around 10 m2. All players movements are tracked and transferred to the virtual world</p>
-                    <p>Online game. Play against each other or together against everyone! (from 1 to 4 people at the same time)</p>
-                    <p>Closed club. You can enter the club only with a password (you can find it out using our chat bot for Viber and Telegram)</p>
-                    <p>What can I play?</p>
-                    <PrimaryBtn>See Games</PrimaryBtn>
-                    
-            </div>
-        </AboutCenter>
-    </Section> 
-    </>
-    )
+      <Title title="about us" center></Title>
+      <AboutCenter>
+        <div className="about-img">
+          <img src={aboutImg} alt="about us" />
+        </div>
+        <div className="about-info">
+          <p>
+            Absolute freedom. The player can easily move around 10 m2. All
+            players movements are tracked and transferred to the virtual world
+          </p>
+          <p>
+            Online game. Play against each other or together against everyone!
+            (from 1 to 4 people at the same time)
+          </p>
+          <p>
+            Closed club. You can enter the club only with a password (you can
+            find it out using our chat bot for Viber and Telegram)
+          </p>
+          <p>What can I play?</p>
+            <PrimaryBtn> See Games »</PrimaryBtn>
+        </div>
+      </AboutCenter>
+    </Section>
+  </>
+);
 };
 
 const AboutCenter = styled.div`
@@ -51,7 +61,6 @@ margin: 0 auto;
         ${setLetterSpacing(1)};
     }
 }
-
 
 ${media.large`
 .about-info {

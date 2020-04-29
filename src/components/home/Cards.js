@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Title from '../globals/Title'
 import Section from '../globals/Section'
 import cards from './data'
-import {setColor, setRem, media, setShadow } from '../../styles'
+import {setColor, setRem, media, setShadow, setFont } from '../../styles'
 
 export default class Cards extends Component {
     state = {
@@ -12,7 +12,7 @@ export default class Cards extends Component {
     }
     render() {
         return (
-            <Section color={setColor.mainBlack} >
+            <Section color={setColor.mainBlack}>
                 <Title title="Price List" center/>
                 <CardsCenter>
                    {this.state.cards.map(card => {
@@ -27,9 +27,16 @@ export default class Cards extends Component {
 const CardsCenter = styled.div`
 width: 90vw;
 margin: 0 auto;
+
 ${media.large`
 width: 100vw;
 max-width: 1170px;
+`};
+
+
+${media.smallPhone`
+width: 100vw;
+margin: 0 auto;
 `};
 
 display: grid;
