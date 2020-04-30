@@ -8,6 +8,8 @@ import styled from 'styled-components'
 
 
 
+
+
 const About = () => {
 return (
   <>
@@ -31,7 +33,7 @@ return (
             find it out using our chat bot for Viber and Telegram)
           </p>
           <p>What can I play?</p>
-            <PrimaryBtn> See Games »</PrimaryBtn>
+          <PrimaryBtn> See Games »</PrimaryBtn>
         </div>
       </AboutCenter>
     </Section>
