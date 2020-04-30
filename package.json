@@ -9,7 +9,6 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "babel-plugin-styled-components": "^1.10.7",
     "gatsby-plugin-styled-components": "^3.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -40,6 +39,7 @@
   },
   "devDependencies": {
     "-": "0.0.1",
+    "babel-plugin-styled-components": "^1.10.7",
     "babel-preset-gatsby": "^0.4.0"
   }
 }
